@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+   margin: 0;
+   background: #111;
+   font-family: "Open Sans",  Impact;
+}
+
+.area {
+    overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   font-size: 6.5em;
+   color: #fff;
+   letter-spacing: -7px;
+   font-weight: 700;
+   text-transform: uppercase;
+   animation: blur .75s ease-out infinite;
+   animation-delay: 2s;
+   text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+span {
+   margin-left: 20px;
+}
+
+@keyframes blur {
+  from {
+    text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;
+  }
+}
+
+.d {
+   animation-fill-mode: forwards;
+}
+
+@keyframes d {
+   0% {
+     transform: translateX(-400px) translateY(-400px);
+     opacity: 1;
+   }
+   50% {
+     transform: translateX(20px) translateY(60px);
+     opacity: 0;
+   }
+   100% {
+     transform: translateX(0) translateY(0);
+     opacity: 1;
+   }
+ }
+ 
+ @keyframes a {
+   0% {
+     transform: translateX(200px) translateY(-200px);
+     opacity: 1;
+   }
+   50% {
+     transform: translateX(-20px) translateY(60px);
+     opacity: 0;
+   }
+   100% {
+     transform: translateX(0) translateY(0);
+     opacity: 1;
+   }
+ }
+ 
+ @keyframes n {
+   0% {
+     transform: translateX(-300px) translateY(400px);
+     opacity: 1;
+   }
+   50% {
+     transform: translateX(50px) translateY(-50px);
+     opacity: 0;
+   }
+   100% {
+     transform: translateX(0) translateY(0);
+     opacity: 1;
+   }
+ }
+ 
+ @keyframes i {
+   0% {
+     transform: translateX(300px) translateY(400px);
+     opacity: 1;
+   }
+   50% {
+     transform: translateX(-70px) translateY(0);
+     opacity: 0;
+   }
+   100% {
+     transform: translateX(0) translateY(0);
+     opacity: 1;
+   }
+ }
+ 
+ @keyframes l {
+   0% {
+     transform: translateX(300px) translateY(0);
+     opacity: 1;
+   }
+   50% {
+     transform: translateX(20px) translateY(60px);
+     opacity: 0;
+   }
+   100% {
+     transform: translateX(0) translateY(0);
+     opacity: 1;
+   }
+ }
+ 
+ /* применяем анимацию к каждой букве */
+ .danil .d {
+   animation: d 2s ease-in-out 1;
+ }
+ 
+ .danil .a {
+   animation: a 2s ease-in-out 1;
+ }
+ 
+ .danil .n {
+   animation: n 2s ease-in-out 1;
+ }
+ 
+ .danil .i {
+   animation: i 2s ease-in-out 1;
+ }
+
+ .danil .ii {
+    animation: i 2s ease-in-out 1;
+  }
+ 
+ .danil .l {
+   animation: l 2s ease-in-out 1;
+ }
